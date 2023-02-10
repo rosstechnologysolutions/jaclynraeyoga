@@ -12,6 +12,10 @@ module.exports = {
     themes: ['pastel']
   },
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+    },
     extend: {},
   },
   plugins: [require("daisyui")],
