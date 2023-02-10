@@ -28,6 +28,7 @@ export default function NavBar() {
 					<ul className="menu menu-horizontal px-1">
 						<li className="text-xl font-bold"><Link href="/">Home</Link></li>
 						<li className="text-xl font-bold"><Link href="/about">About</Link></li>
+						<li className="text-xl font-bold"><Link href="/schedule">Schedule</Link></li>
 					</ul>
 				</div>
       </div>
