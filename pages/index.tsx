@@ -32,7 +32,19 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				</section>
+			</section>
+
+			{/* Join the newsletter */}
+			{/* TODO: implement a sign up form component */}
+			<section>
+				<div className="bg-gradient-to-r from-accent to-accent-focus h-44">
+					<h3 className="text-4xl text-center p-4">Sign Up For My Newsletter</h3>
+					<h5 className="text-xl text-center">Get the latest updates on what's happening with me and tips for your yoga practice.</h5>
+					<div className="grid place-items-center p-4">
+						<button className="btn btn-primary items-center">Sign Up</button>
+					</div>
+				</div>
+			</section>
 		</>
 	)
 }
