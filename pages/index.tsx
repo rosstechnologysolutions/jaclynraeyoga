@@ -111,7 +111,9 @@ export default function Home() {
 					</div>
 					</div>
 				</div>
-			</section>
+			</section>\
+
+			{/* TODO: get a yoga quote for jaclyn so we have another section */}
 
 			{/* Join the newsletter */}
 			{/* TODO: implement a sign up form component */}
