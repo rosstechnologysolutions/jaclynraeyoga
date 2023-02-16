@@ -77,7 +77,7 @@ export default function Home() {
 				<div className="bg-white">
 					<div className="container mx-auto">
 					<h3 className="text-4xl text-center p-4">See Where I'm Teaching Next</h3>
-					<div className="grid grid-flow-col grid-cols-3 content-center">
+					<div className="flex flex-row">
 						<div className="card w-96 bg-base-100 shadow-xl m-10">
 							<figure><Image src={YogaFlow} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
@@ -113,7 +113,7 @@ export default function Home() {
 				</div>
 			</section>\
 
-			{/* TODO: get a yoga quote for jaclyn so we have another section */}
+			{/* TODO: get a yoga quote for jaclyn so we have ano;ther section */}
 
 			{/* Join the newsletter */}
 			{/* TODO: implement a sign up form component */}
