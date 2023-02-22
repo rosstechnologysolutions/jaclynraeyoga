@@ -9,30 +9,41 @@ mailchimp.setConfig({
   });
   
 
-type Subscribe = {
-    firstName: "string"
-    lastname: "tring"
-    email: "string"
+type SubscriberProps = {
+  email: string,
+  firstName: string,
+  lastName: string,
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  
-  const body = req.body
 
-  console.log("body: ", body)
-  // console.log("first name: %d, last name: %d, email: %d", req.)
+  const subscriber: SubscriberProps = JSON.parse(JSON.stringify(req.body));
 
-  subscribe()
-  
+  console.log(subscriber)
+
+  const response = subscribe(subscriber)
+
+  // res.status(200).write(response)
+
   res.status(200).json({ subscribed: true })
 }
 
-async function subscribe(Data<Subscribe>) {
+async function subscribe(subscriber: SubscriberProps) {
+
+  console.log("subscribe recevied firstName: " + subscriber.firstName + ", " + " lastName: " + subscriber.lastName + ", " + " email: " + subscriber.email)
+  console.log("list id: " + process.env.MAILCHIMP_LIST_ID)
+  
   const response = await mailchimp.lists.addListMember(process.env.MAILCHIMP_LIST_ID, {
-    email_address: "foo@gmail.com",
+    email_address: subscriber.email,
+    email_type: "html",
+    merge_fields: {FNAME: subscriber.firstName, LNAME: subscriber.lastName},
+    last_name: subscriber.lastName,
     status: "subscribed",
   });
 
   // const response = await mailchimp.lists.getAllLists();
-  console.log(response);
+  // console.log(response);
+  console.log(JSON.parse(JSON.stringify(response)));
+  // return response
+
 }
