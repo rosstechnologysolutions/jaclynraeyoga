@@ -10,7 +10,7 @@ export default function Schedule() {
 			<title>Jaclyn Rae Yoga | Schedule</title>
 		</Head>
 	
-			<h1>Schedule</h1>
+			{/* <h1>Schedule</h1> */}
 			
 			<Subscribe />
 		</>	
