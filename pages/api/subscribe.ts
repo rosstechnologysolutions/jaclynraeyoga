@@ -16,21 +16,38 @@ type SubscriberProps = {
 	lastName: string,
 }
 
+// default function for the handler
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
 		const subscriber: SubscriberProps = JSON.parse(JSON.stringify(req.body));
 	
-		console.log(subscriber)
+		console.log("attempting to subscribe: " + subscriber)
 	
-		subscribe(subscriber).then((response) =>{
-			console.log(response.status)
+		subscribe(subscriber).then((response) => {
+
+			if (response.status != 'subscribed') {
+				
+				const splitError = response.detail.split(". ")
+
+				let dateTime = new Date()
+				console.log(dateTime + " error: " + response.detail)
+			
+				res.status(400).json({ message: splitError[0]})
+			
+				return
+			}
+
+			let dateTime = new Date()
+			console.log(dateTime + " success. subscribed: " + subscriber.email)
+			
+			res.status(200).json({ message: "subscribed" })
+			
+			return
 		});
-	
-		// res.status(200).write(response)
-	
-		res.status(200).json({ subscribed: true })
 	}
 
+// subscribe the passed user to the mailchimp list
+// shout out to this article for the help - https://www.codementor.io/@mattgoldspink/integrate-mailchimp-with-nodejs-app-du10854xp
 async function subscribe(subscriber: SubscriberProps) {
 	const response = await fetch ('https://' + process.env.MAILCHIMP_SERVER_PREFIX + '.api.mailchimp.com/3.0/lists/' + process.env.MAILCHIMP_LIST_ID + '/members/', {
 		body: JSON.stringify({
@@ -48,31 +65,5 @@ async function subscribe(subscriber: SubscriberProps) {
 		method: "POST",
 	});
 
-	// console.log(response.json)
 	return response.json();
-
-	// .then((response) => response.json())
-	// .then((json) => console.log(json))
 };
-
-// const subscribe = (subscriber: SubscriberProps) => {
-// 	const response = fetch ('https://' + process.env.MAILCHIMP_SERVER_PREFIX + '.api.mailchimp.com/3.0/lists/' + process.env.MAILCHIMP_LIST_ID + '/members/', {
-// 		body: JSON.stringify({
-// 			'email_address': subscriber.email,
-// 			'status': 'subscribed',
-// 			'merge_fields': {
-// 				'FNAME': subscriber.firstName,
-// 				'LNAME': subscriber.lastName
-// 			}
-// 		}),
-// 		headers: {
-// 			"Content-Type": "application/json;charset=utf-8",
-// 			"Authorization": "Basic " + new Buffer('any:' + process.env.MAILCHIMP_API_KEY ).toString('base64')
-// 		},
-// 		method: "POST",
-// 	})
-
-// 	.then((response) => response.json())
-// 	.then((json) => console.log(json))
-// };
-
