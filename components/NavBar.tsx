@@ -27,6 +27,7 @@ export default function NavBar() {
             <li className="text-xl font-bold"><Link href="/">Home</Link></li>
             <li className="text-xl font-bold"><Link href="/about">About</Link></li>
             <li className="text-xl font-bold"><Link href="/schedule">Schedule</Link></li>
+            <li className="text-xl font-bold"><Link href="/sign-up">Sign Up</Link></li>
           </ul>
         </div>
       </div>
