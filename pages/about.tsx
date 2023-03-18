@@ -20,7 +20,7 @@ export default function About() {
 				/>
 				<div className="ml-10">
 					<p>
-						My name is Jaclyn Ross. I'm a 200-HR RYT Yoga Teacher, an 85-hour Shanti Mom Prenatal Yoga Teacher and a Certified Health Education Specialist. In my classes, you can expect alignment-focused poses with breath and meditation work that is appropriate for all levels.
+						My name is Jaclyn Ross. I&apos;m a 200-HR RYT Yoga Teacher, an 85-hour Shanti Mom Prenatal Yoga Teacher and a Certified Health Education Specialist. In my classes, you can expect alignment-focused poses with breath and meditation work that is appropriate for all levels.
 					</p>
 					<br />
 					<p>
