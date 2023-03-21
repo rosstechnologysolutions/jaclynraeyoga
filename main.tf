@@ -37,7 +37,6 @@ resource "digitalocean_app" "jaclyn_rae_yoga_site" {
     name = "jaclyn-rae-yoga"
     domain {
       name = "jaclynraeyoga.rosstechnologysolutions.com"
-      zone = "RTS"
     }
     region = "nyc"
     static_site {

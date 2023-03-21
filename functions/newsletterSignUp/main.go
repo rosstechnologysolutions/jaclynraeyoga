@@ -3,6 +3,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 )
 
@@ -27,6 +28,8 @@ type Response struct {
 }
 
 func Main(req Request) (*Response, error) {
+
+	fmt.Printf("request firstname: %s, lastname: %s, email: %s", req.Firstname, req.Lastname, req.Email)
 
 	return &Response{
 		StatusCode: http.StatusOK,
