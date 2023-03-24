@@ -1,6 +1,13 @@
 # main.tf
 
-# provider information
+############################
+### provider information ###
+############################
+
+provider "digitalocean" {
+  token = var.JACLYN_RAE_YOGA_DO_TOKEN
+}
+
 terraform {
   required_providers {
     digitalocean = {
@@ -11,6 +18,9 @@ terraform {
   required_version = ">=1.3.7"
 }
 
+#################
+### variables ###
+#################
 variable "JACLYN_RAE_YOGA_DO_TOKEN" {
   type = string
 }
@@ -27,11 +37,9 @@ variable "MAILCHIMP_LIST_ID" {
   type = string
 }
 
-provider "digitalocean" {
-  token = var.JACLYN_RAE_YOGA_DO_TOKEN
-}
-
-# resources 
+#################
+### resources ###
+#################
 resource "digitalocean_app" "jaclyn_rae_yoga_site" {
   spec {
     name = "jaclyn-rae-yoga"
@@ -89,4 +97,13 @@ resource "digitalocean_app" "jaclyn_rae_yoga_site" {
       }
     }
   }
+}
+
+# create a dns CNAME to the app live url
+resource "digitalocean_record" "jaclyn_rae_yoga" {
+  domain = concat(split("//", "${digitalocean_app.jaclyn_rae_yoga_site.live_url}")[1], ".")
+  ttl    = "300"
+  type   = "CNAME"
+  name   = "jaclyn-rae-yoga"
+  value  = split("//", "${digitalocean_app.jaclyn_rae_yoga_site.default_ingress}")[1]
 }
