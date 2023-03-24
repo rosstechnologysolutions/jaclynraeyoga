@@ -7,7 +7,7 @@ import { Inter } from '@next/font/google'
 import Jaclyn from "../public/jaclyn.webp"
 import YogaFlow from "../public/yogaFlow.jpg"
 import PrenatalYoga from "../public/prenatalYoga.jpg"
-import YogaClass from "../public/yogaClass.jpg"
+import YogaPrivateLessons from "../public/yogaPrivateLessons.jpg"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -34,20 +34,6 @@ export default function Home() {
 							<Link href="/about">
 								<button className="btn btn-primary mr-2">About Me</button>
 							</Link>
-							{/* The button to open modal */}
-							<label htmlFor="my-modal" className="btn btn-secondary">NewsLetter Sign Up</label>
-
-							{/* Put this part before </body> tag */}
-							<input type="checkbox" id="my-modal" className="modal-toggle" />
-							<div className="modal">
-								<div className="modal-box">
-									<h3 className="font-bold text-lg">Congratulations random Internet user!</h3>
-									<p className="py-4">You&apos;ve been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-									<div className="modal-action">
-										<label htmlFor="my-modal" className="btn">Yay!</label>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -76,8 +62,18 @@ export default function Home() {
 			<section>
 				<div className="bg-white">
 					<div className="container mx-auto">
-					<h3 className="text-4xl text-center p-4">See Where I&apos;m Teaching Next</h3>
+					<h3 className="text-4xl text-center p-4">Classes I Teach</h3>
 					<div className="flex md:flex-row flex-col">
+					<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
+							<figure><Image src={PrenatalYoga} alt="yoga hatha vinyasa flow" /></figure>
+							<div className="card-body">
+								<h2 className="card-title">Prenatal</h2>
+								<p>Connect with yourself, baby, and other pregnant mothers during this prenatal yoga class.</p>
+								<div className="card-actions justify-end">
+									<button className="btn btn-primary">Learn More</button>
+								</div>
+							</div>
+						</div>
 						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
 							<figure><Image src={YogaFlow} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
@@ -89,20 +85,10 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
-							<figure><Image src={PrenatalYoga} alt="yoga hatha vinyasa flow" /></figure>
+							<figure><Image src={YogaPrivateLessons} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
-								<h2 className="card-title">Prenatal</h2>
-								<p>Connect with yourself, baby, and other pregnant mothers during this prenatal yoga class.</p>
-								<div className="card-actions justify-end">
-									<button className="btn btn-primary">Learn More</button>
-								</div>
-							</div>
-						</div>
-						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
-							<figure><Image src={YogaClass} alt="yoga hatha vinyasa flow" /></figure>
-							<div className="card-body">
-								<h2 className="card-title">Workshops</h2>
-								<p></p>
+								<h2 className="card-title">Private Lessons</h2>
+								<p>Get personal instruction in a private lesson either in person or virtual.</p>
 								<div className="card-actions justify-end">
 									<button className="btn btn-primary">Learn More</button>
 								</div>
