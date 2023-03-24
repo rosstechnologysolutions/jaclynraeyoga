@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Image from 'next/image'
 
-// import JaclynAbout from '../public/jaclynAbout.webp'
+import PrenatalYoga from "../public/prenatalYoga.jpg"
 export default function Classes() {
   return (
   	<>
@@ -12,9 +11,16 @@ export default function Classes() {
 		{/* TODO: clean this up. need another photo of her*/}
 		<div className="flex flex-col min-h-screen">
 			<div className="container">
-				<section>
-					<h1 className="text-2xl">Prenatal</h1>
-					<div>
+				<section className="flex flex-row p-5 w-full">
+					<div className="w-1/3">
+						<h1 className="text-2xl py-5 text-center">Prenatal Classes</h1>
+						<Image 
+							className="float-left rounded-xl h-76 w-auto mr-10"
+							alt="prenatal yoga class"
+							src={PrenatalYoga}
+						/>
+					</div>
+					<div className="w-2/3 pt-16 pl-5 text-lg">
 						<p>
 								Pregnancy is a time of many physical changes in the body. Through Prenatal Yoga you can learn techniques and postures to help prepare the body for birth and alleviate common pregnancy symptoms. We will practice postures that will help to strengthen and relax the body for pregnancy and labor.
 						</p>
@@ -27,21 +33,36 @@ export default function Classes() {
 							Lastly, a prenatal yoga class is a wonderful way to find community. Join other pregnant moms on a similar journey. Commune with each other and share experiences to develop friendships and connections that can extend beyond the yoga mat. Mothers in all stages of pregnancy are welcome in this class and no yoga experience is necessary.
 						</p>
 					</div>
-
 				</section>
-				
+
+				<section>
+					<div>
+						<h1 className="text-2xl text-center">My Class Schedule</h1>
+					</div>
+					<div className="overflow-x-auto bg-accent">
+						<table className="table w-full">
+							{/* head */}
+							<thead>
+							<tr>
+								<th>Class Name</th>
+								<th>Studio</th>
+								<th>City</th>
+								<th>Sign Up Link</th>
+							</tr>
+							</thead>
+							<tbody>
+							{/* row 1 */}
+							<tr className="hover">
+								<td>Shanti Mom Prenatal Yoga</td>
+								<td>NKO Yoga</td>
+								<td>Deerfield, Ohio</td>
+								<td><div className="underline"><a href="https://www.nkoyoga.com/prenatal-yoga.html">nkoyoga.com</a></div></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
 			</div>
-		{/* CALL TO ACTION */}
-		<section>
-			<div className="bg-gradient-to-r from-accent to-accent-focus mt-10">
-				<h3 className="text-center text-2xl text-primary-content p-5">Check Out My Class Schedule</h3>
-				<div className="grid justify-items-center p-5">
-					<Link href="/schedule">
-						<button className="btn btn-active btn-primary">See Schedule</button>
-					</Link>
-				</div>
-			</div>
-		</section>
 		</div>
 	</>
 	)

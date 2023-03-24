@@ -63,24 +63,14 @@ export default function Home() {
 				<div className="bg-white">
 					<div className="container mx-auto">
 					<h3 className="text-4xl text-center p-4">Classes I Teach</h3>
-					<div className="flex md:flex-row flex-col">
-					<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
+					<div className="flex md:flex-row content-between flex-col">
+						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
 							<figure><Image src={PrenatalYoga} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
-								<h2 className="card-title">Prenatal</h2>
+								<h2 className="card-title">Prenatal Group Classes</h2>
 								<p>Connect with yourself, baby, and other pregnant mothers during this prenatal yoga class.</p>
 								<div className="card-actions justify-end">
-									<button className="btn btn-primary">Learn More</button>
-								</div>
-							</div>
-						</div>
-						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
-							<figure><Image src={YogaFlow} alt="yoga hatha vinyasa flow" /></figure>
-							<div className="card-body">
-								<h2 className="card-title">Hatha Vinyasa Flow</h2>
-								<p></p>
-								<div className="card-actions justify-end">
-									<button className="btn btn-primary">Learn More</button>
+									<Link href="/classes"><button className="btn btn-primary">Learn More</button></Link>
 								</div>
 							</div>
 						</div>
@@ -88,9 +78,11 @@ export default function Home() {
 							<figure><Image src={YogaPrivateLessons} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
 								<h2 className="card-title">Private Lessons</h2>
-								<p>Get personal instruction in a private lesson either in person or virtual.</p>
+								<p>Get personalized instruction with in-person or virtual private lessons.</p>
 								<div className="card-actions justify-end">
-									<button className="btn btn-primary">Learn More</button>
+								<a href="mailto:jaclyn@jaclynraeyoga.com">
+									<button className="btn btn-primary">Contact Me</button>
+								</a>
 								</div>
 							</div>
 						</div>
