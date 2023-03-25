@@ -32,8 +32,8 @@ export default function Home() {
 							<h1 className="text-5xl font-bold mb-5 text-center">Meet Your Yoga Teacher</h1>
 							<p className="py-6 text-xl">Hi, I&apos;m Jaclyn. I have a passion for yoga and helping others get moving on their mat. Yoga has changed my life and I think it can change yours. Click below to learn more about my experience and certifications or to sign up for my newsletter.</p>
 							<div className="flex flex-flow-col">
-									<Link href="/about">
-										<button className="btn btn-primary align-center">About Me</button>
+									<Link className="align-center" href="/about">
+										<button className="btn btn-primary">About Me</button>
 									</Link>
 							</div>
 						</div>
@@ -97,7 +97,7 @@ export default function Home() {
 
 			{/* Join the newsletter */}
 			{/* TODO: implement a sign up form component */}
-			<section>
+			{/* <section>
 				<div className="bg-gradient-to-r from-accent to-accent-focus">
 					<h3 className="text-4xl text-center p-4">Sign Up For My Newsletter</h3>
 					<h5 className="text-xl text-center">Get the latest updates on what&apos;s happening with me and tips for your yoga practice.</h5>
@@ -105,7 +105,7 @@ export default function Home() {
 						<button className="btn btn-primary items-center">Newsletter Sign Up</button>
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</>
 	)
 }
