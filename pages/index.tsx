@@ -19,9 +19,9 @@ export default function Home() {
 				<title>Jaclyn Rae Yoga | Home</title>
 			</Head>
 			{/* HERO */}
-			<section>
+			<section className="w-screen">
 				<div className="hero min-h-screen bg-base-200">
-					<div className="hero-content flex-col lg:flex-row">
+					<div className="hero-content flex-col lg:flex-row px-0.5">
 						<Image
 							alt="picture of Jaclyn the yoga teacher"
 							className="max-w-sm rounded-lg shadow-2xl"
