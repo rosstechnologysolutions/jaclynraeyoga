@@ -22,11 +22,11 @@ export default function NavBar() {
             </Image>
           </Link>
         </div>
-        {/* <div className="flex-2">
+        <div className="flex-2">
           <div className="flex-none sm:none">
             <ul className="menu menu-horizontal hidden sm:flex">
               <li className="text-xl font-bold"><Link href="/">Home</Link></li>
-              <li className="text-xl font-bold"><Link href="/about">About</Link></li>
+              <li className="text-xl font-bold"><Link href="/about.html">About</Link></li>
               <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
               <li className="text-xl font-bold"><Link href="/subscribe">Subscribe</Link></li>
             </ul>
@@ -46,8 +46,8 @@ export default function NavBar() {
                   </ul>
               </li>
             </ul>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
       </div>
     </>
   )
