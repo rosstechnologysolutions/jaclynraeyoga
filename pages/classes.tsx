@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import PrenatalYoga from "../public/prenatalYoga.jpg"
 export default function Classes() {
@@ -37,7 +38,16 @@ export default function Classes() {
 
 				<section>
 					<div>
-						<h1 className="text-2xl text-center">My Class Schedule</h1>
+						<h1 className="text-2xl text-center my-5">Class Schedule</h1>
+					</div>
+					<div className="flex flex-flow-col md:flex-flow-row">
+						<ol>
+							<li className="text-lg xs:text-xl"><span className="font-bold py-5">Class Name:</span> Shanti Mom Prenatal Yoga</li>
+							<li className="text-lg xs:text-xl"><span className="font-bold py-5">Date and Time:</span> Wednesdays 6:30pm - 7:45pm ET</li>
+							<li className="text-lg xs:text-xl"><span className="font-bold py-5">Studio:</span> NKO Yoga</li>
+							<li className="text-lg xs:text-xl"><span className="font-bold py-5">City:</span> Deer Park, Ohio</li>
+							<li className="text-lg xs:text-xl"><span className="font-bold py-5">Sign Up Link:</span><Link href="https://www.nkoyoga.com/prenatal-yoga.html" target="_blank"> <span className="underline">Sign Up</span></Link></li>
+						</ol>
 					</div>
 				</section>
 			</div>

@@ -22,12 +22,13 @@ export default function NavBar() {
             </Image>
           </Link>
         </div>
+        {/* add redirects in DO /about => /about.html */}
         <div className="flex-2">
           <div className="flex-none sm:none">
             <ul className="menu menu-horizontal hidden sm:flex">
               <li className="text-xl font-bold"><Link href="/">Home</Link></li>
-              <li className="text-xl font-bold"><Link href="/about.html">About</Link></li>
-              <li className="text-xl font-bold"><Link href="/classes.html">Classes</Link></li>
+              <li className="text-xl font-bold"><Link href="/about">About</Link></li>
+              <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
               {/* <li className="text-xl font-bold"><Link href="/subscribe.html">Subscribe</Link></li> */}
             </ul>
           </div>
@@ -40,8 +41,8 @@ export default function NavBar() {
                   <ul className="p-2 bg-base-100 z-10 drop-shadow">
                     <br />
                     <li className="text-xl font-bold"><Link href="/">Home</Link></li>
-                    <li className="text-xl font-bold"><Link href="/about.html">About</Link></li>
-                    <li className="text-xl font-bold"><Link href="/classes.html">Classes</Link></li>
+                    <li className="text-xl font-bold"><Link href="/about">About</Link></li>
+                    <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
                     {/* <li className="text-xl font-bold"><Link href="/subscribe.html">Subscribe</Link></li> */}
                   </ul>
               </li>
