@@ -31,7 +31,7 @@ export default function Home() {
 						<div>
 							<h1 className="text-5xl font-bold">Meet Your Yoga Teacher</h1>
 							<p className="py-6 text-xl">Hi, I&apos;m Jaclyn. I have a passion for yoga and helping others get moving on their mat. Yoga has changed my life and I think it can change yours. Click below to learn more about my experience and certifications or to sign up for my newsletter.</p>
-							<Link href="/about">
+								<Link href="/about">
 								<button className="btn btn-primary mr-2">About Me</button>
 							</Link>
 						</div>
@@ -45,7 +45,7 @@ export default function Home() {
 					<h3 className="text-4xl text-center p-4">Follow Me on Social</h3>
 					<div className="flex justify-center space-x-2 text-gray-700">
 						<Link
-							href="https://www.facebook.com/jaclynraeyoga/"
+							href="https://www.instagram.com/jaclynraeyoga/"
 							target="_blank"
 						>
 							<div className="h-16 w-16 m-2">

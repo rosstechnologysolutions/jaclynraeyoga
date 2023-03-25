@@ -54,7 +54,6 @@ resource "digitalocean_app" "jaclyn_rae_yoga_site" {
       routes {
         path = "/"
       }
-
       github {
         repo           = "rosstechnologysolutions/jaclynraeyoga"
         branch         = "main"
@@ -99,11 +98,11 @@ resource "digitalocean_app" "jaclyn_rae_yoga_site" {
   }
 }
 
-# create a dns CNAME to the app live url
-resource "digitalocean_record" "jaclyn_rae_yoga" {
-  domain = concat(split("//", "${digitalocean_app.jaclyn_rae_yoga_site.live_url}")[1], ".")
-  ttl    = "300"
-  type   = "CNAME"
-  name   = "jaclyn-rae-yoga"
-  value  = split("//", "${digitalocean_app.jaclyn_rae_yoga_site.default_ingress}")[1]
-}
+# # create a dns CNAME to the app live url
+# resource "digitalocean_record" "jaclyn_rae_yoga" {
+#   domain = concat(split("//", "${digitalocean_app.jaclyn_rae_yoga_site.live_url}")[1], ".")
+#   ttl    = "300"
+#   type   = "CNAME"
+#   name   = "jaclyn-rae-yoga"
+#   value  = split("//", "${digitalocean_app.jaclyn_rae_yoga_site.default_ingress}")[1]
+# }

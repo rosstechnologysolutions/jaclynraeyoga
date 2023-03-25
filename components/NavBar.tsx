@@ -26,9 +26,9 @@ export default function NavBar() {
           <div className="flex-none sm:none">
             <ul className="menu menu-horizontal hidden sm:flex">
               <li className="text-xl font-bold"><Link href="/">Home</Link></li>
-              <li className="text-xl font-bold"><Link href="/about">About</Link></li>
+              <li className="text-xl font-bold"><Link href="/about"><button>About Me</button></Link></li>
               <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
-              <li className="text-xl font-bold"><Link href="/subscribe">Subscribe</Link></li>
+              {/* <li className="text-xl font-bold"><Link href="/subscribe">Subscribe</Link></li> */}
             </ul>
           </div>
           <div className="flex-none sm:hidden">
@@ -42,7 +42,7 @@ export default function NavBar() {
                     <li className="text-xl font-bold"><Link href="/">Home</Link></li>
                     <li className="text-xl font-bold"><Link href="/about">About</Link></li>
                     <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
-                    <li className="text-xl font-bold"><Link href="/subscribe">Subscribe</Link></li>
+                    {/* <li className="text-xl font-bold"><Link href="/subscribe">Subscribe</Link></li> */}
                   </ul>
               </li>
             </ul>

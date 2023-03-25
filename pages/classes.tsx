@@ -12,7 +12,7 @@ export default function Classes() {
 		<div className="flex flex-col min-h-screen">
 			<div className="container mx-auto">
 				<section className="flex flex-col sm:flex-row p-5 w-full">
-					<div className="sm:w-1/3 w-screen">
+					<div className="sm:w-1/3">
 						<h1 className="text-2xl py-5 text-center">Prenatal Classes</h1>
 						<Image 
 							className="float-left rounded-xl h-76 sm:w-auto sm:mr-10"
@@ -20,7 +20,7 @@ export default function Classes() {
 							src={PrenatalYoga}
 						/>
 					</div>
-					<div className="sm:w-2/3 w-screen pt-16 pl-5 text-lg">
+					<div className="sm:w-2/3 pt-16 pl-5 text-lg">
 						<p>
 								Pregnancy is a time of many physical changes in the body. Through Prenatal Yoga you can learn techniques and postures to help prepare the body for birth and alleviate common pregnancy symptoms. We will practice postures that will help to strengthen and relax the body for pregnancy and labor.
 						</p>
