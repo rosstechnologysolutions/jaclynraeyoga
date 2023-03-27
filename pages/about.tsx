@@ -16,10 +16,10 @@ export default function About() {
 				<div className="text-xl font-normal">
 					<Image
 						alt="picture of Jaclyn"
-						className="float-left h-96 rounded-xl w-72 mr-10"
+						className="xs:float-left h-96 rounded-xl w-72 xs:mr-10 mx-auto"
 						src={JaclynAbout}
 					/>
-					<div className="ml-10">
+					<div className="xs:ml-10 my-auto px-5 mt-5">
 						<p>
 							My name is Jaclyn Ross. I&apos;m a 200-HR RYT Yoga Teacher, an 85-hour Shanti Mom Prenatal Yoga Teacher and a Certified Health Education Specialist. In my classes, you can expect alignment-focused poses with breath and meditation work that is appropriate for all levels.
 						</p>

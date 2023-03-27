@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 
 import Jaclyn from "../public/jaclyn.webp"
-import YogaFlow from "../public/yogaFlow.jpg"
 import PrenatalYoga from "../public/prenatalYoga.jpg"
 import YogaPrivateLessons from "../public/yogaPrivateLessons.jpg"
 
@@ -27,8 +26,8 @@ export default function Home() {
 						<div>
 							<h1 className="text-5xl font-bold mb-5 text-center">Meet Your Yoga Teacher</h1>
 							<p className="py-6 text-xl">Hi, I&apos;m Jaclyn. I have a passion for yoga and helping others get moving on their mat. Yoga has changed my life and I think it can change yours. Click below to learn more about my experience and certifications or to sign up for my newsletter.</p>
-							<div className="flex flex-flow-col">
-									<Link className="align-center" href="/about">
+							<div className="flex content-center justify-center xs:justify-start">
+									<Link href="/about">
 										<button className="btn btn-primary">About Me</button>
 									</Link>
 							</div>
@@ -62,7 +61,7 @@ export default function Home() {
 					<div className="container mx-auto">
 					<h3 className="text-4xl text-center p-4">Classes I Teach</h3>
 					<div className="flex md:flex-row content-between flex-col">
-						<div className="card w-72 md:w-96 bg-base-100 shadow-xl mx-auto my-5">
+						<div className="card w-72 md:w-96 bg-base-100 shadow-xl mx-auto my-5 md:px-5">
 							<figure><Image src={PrenatalYoga} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
 								<h2 className="card-title">Prenatal Group Classes</h2>
@@ -72,7 +71,7 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="card w-72 md:w-96 bg-base-100 shadow-xl mx-auto my-5">
+						<div className="card w-72 md:w-96 bg-base-100 shadow-xl mx-auto my-5 md:px-6">
 							<figure><Image src={YogaPrivateLessons} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
 								<h2 className="card-title">Private Lessons</h2>
