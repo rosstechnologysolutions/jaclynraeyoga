@@ -12,16 +12,14 @@ export default function Classes() {
 		{/* TODO: clean this up. need another photo of her*/}
 		<div className="flex flex-col min-h-screen">
 			<div className="container mx-auto">
-				<section className="flex flex-col sm:flex-row p-5 w-full">
-					<div className="sm:w-1/3">
-						<h1 className="text-2xl py-5 text-center">Prenatal Classes</h1>
+			<h1 className="text-2xl py-5 text-center">Prenatal Classes</h1>
+				<section className="p-5 w-full">
 						<Image 
-							className="float-left rounded-xl h-76 sm:w-auto sm:mr-10"
+							className="float-left h-48 w-72 sm:h-72 rounded-xl sm:w-96 sm:mr-10 mx-auto"
 							alt="prenatal yoga class"
 							src={PrenatalYoga}
 						/>
-					</div>
-					<div className="sm:w-2/3 pt-16 pl-5 text-lg">
+					<div className="text-lg">
 						<p>
 								Pregnancy is a time of many physical changes in the body. Through Prenatal Yoga you can learn techniques and postures to help prepare the body for birth and alleviate common pregnancy symptoms. We will practice postures that will help to strengthen and relax the body for pregnancy and labor.
 						</p>
@@ -40,7 +38,7 @@ export default function Classes() {
 					<div>
 						<h1 className="text-2xl text-center my-5">Class Schedule</h1>
 					</div>
-					<div className="flex flex-flow-col md:flex-flow-row py-10">
+					<div className="flex flex-flow-col md:flex-flow-row">
 						<ol>
 							<li className="text-lg xs:text-xl"><span className="font-bold py-5">Class Name:</span> Shanti Mom Prenatal Yoga</li>
 							<li className="text-lg xs:text-xl"><span className="font-bold py-5">Date and Time:</span> Wednesdays 6:30pm - 7:45pm ET</li>
