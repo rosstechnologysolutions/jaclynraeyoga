@@ -21,21 +21,21 @@ terraform {
 #################
 ### variables ###
 #################
-variable "JACLYN_RAE_YOGA_DO_TOKEN" {
-  type = string
-}
+# variable "JACLYN_RAE_YOGA_DO_TOKEN" {
+#   type = string
+# }
 
-variable "MAILCHIMP_API_KEY" {
-  type = string
-}
+# variable "MAILCHIMP_API_KEY" {
+#   type = string
+# }
 
-variable "MAILCHIMP_SERVER_PREFIX" {
-  type = string
-}
+# variable "MAILCHIMP_SERVER_PREFIX" {
+#   type = string
+# }
 
-variable "MAILCHIMP_LIST_ID" {
-  type = string
-}
+# variable "MAILCHIMP_LIST_ID" {
+#   type = string
+# }
 
 #################
 ### resources ###
@@ -67,24 +67,24 @@ resource "digitalocean_app" "jaclyn_rae_yoga_site" {
       # TODO: CORS - https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/app#cors
       source_dir = "functions/newsletterSignUp"
 
-      env {
-        key   = "MAILCHIMP_API_KEY"
-        value = var.MAILCHIMP_API_KEY
-        scope = "RUN_AND_BUILD_TIME"
-        type  = "SECRET"
-      }
-      env {
-        key   = "MAILCHIMP_SERVER_PREFIX"
-        value = var.MAILCHIMP_SERVER_PREFIX
-        scope = "RUN_AND_BUILD_TIME"
-        type  = "SECRET"
-      }
-      env {
-        key   = "MAILCHIMP_LIST_ID"
-        value = var.MAILCHIMP_LIST_ID
-        scope = "RUN_AND_BUILD_TIME"
-        type  = "SECRET"
-      }
+      # env {
+      #   key   = "MAILCHIMP_API_KEY"
+      #   value = var.MAILCHIMP_API_KEY
+      #   scope = "RUN_AND_BUILD_TIME"
+      #   type  = "SECRET"
+      # }
+      # env {
+      #   key   = "MAILCHIMP_SERVER_PREFIX"
+      #   value = var.MAILCHIMP_SERVER_PREFIX
+      #   scope = "RUN_AND_BUILD_TIME"
+      #   type  = "SECRET"
+      # }
+      # env {
+      #   key   = "MAILCHIMP_LIST_ID"
+      #   value = var.MAILCHIMP_LIST_ID
+      #   scope = "RUN_AND_BUILD_TIME"
+      #   type  = "SECRET"
+      # }
 
       github {
         repo           = "rosstechnologysolutions/jaclynraeyoga"
