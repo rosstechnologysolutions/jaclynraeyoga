@@ -33,6 +33,6 @@ func Main(req Request) (*Response, error) {
 
 	return &Response{
 		StatusCode: http.StatusOK,
-		Body:       "hello from the sign up function!",
+		Body:       "hello from the Sign Up function!",
 	}, nil
 }
