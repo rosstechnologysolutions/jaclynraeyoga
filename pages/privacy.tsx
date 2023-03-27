@@ -28,9 +28,9 @@ export default function PrivacyPolicy() {
 
         <br />
         <h1 className="text-xl font-bold">Cookies</h1>
-        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer&apos;s hard drive. Our website does not uses these "cookies" to collection information and to improve our Service.</p>
+        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer&apos;s hard drive. Our website does not uses these &quot;cookies&quot; to collection information and to improve our Service.</p>
 
-        <p>For more general information on cookies, please read "Cookies" article from the Privacy Policy Generator.</p>
+        <p>For more general information on cookies, please read &quot;Cookies&quot; article from the Privacy Policy Generator.</p>
 
         <br />
         <h2 className="text-xl font-bold">Service Providers</h2>
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
         <p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
 
         <br />
-        <h2 className="text-xl font-bold">Children's Privacy</h2>
+        <h2 className="text-xl font-bold">Children&apos;s Privacy</h2>
         <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
 
         <br />
