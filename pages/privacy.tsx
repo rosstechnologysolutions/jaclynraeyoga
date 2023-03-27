@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
 
         <br />
         <h1 className="text-xl font-bold">Cookies</h1>
-        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer’s hard drive. Our website does not uses these "cookies" to collection information and to improve our Service.</p>
+        <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer&apos;s hard drive. Our website does not uses these "cookies" to collection information and to improve our Service.</p>
 
         <p>For more general information on cookies, please read "Cookies" article from the Privacy Policy Generator.</p>
 
