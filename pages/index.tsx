@@ -2,15 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Inter } from '@next/font/google'
 
 import Jaclyn from "../public/jaclyn.webp"
 import YogaFlow from "../public/yogaFlow.jpg"
 import PrenatalYoga from "../public/prenatalYoga.jpg"
 import YogaPrivateLessons from "../public/yogaPrivateLessons.jpg"
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 	return (
@@ -66,7 +62,7 @@ export default function Home() {
 					<div className="container mx-auto">
 					<h3 className="text-4xl text-center p-4">Classes I Teach</h3>
 					<div className="flex md:flex-row content-between flex-col">
-						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
+						<div className="card w-72 md:w-96 bg-base-100 shadow-xl mx-auto my-5">
 							<figure><Image src={PrenatalYoga} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
 								<h2 className="card-title">Prenatal Group Classes</h2>
@@ -76,7 +72,7 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="card w-72 md:w-96 bg-base-100 shadow-xl m-10">
+						<div className="card w-72 md:w-96 bg-base-100 shadow-xl mx-auto my-5">
 							<figure><Image src={YogaPrivateLessons} alt="yoga hatha vinyasa flow" /></figure>
 							<div className="card-body">
 								<h2 className="card-title">Private Lessons</h2>
