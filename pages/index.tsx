@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import Jaclyn from "../public/jaclyn.webp"
 import PrenatalYoga from "../public/prenatalYoga.jpg"
 import YogaPrivateLessons from "../public/yogaPrivateLessons.jpg"
