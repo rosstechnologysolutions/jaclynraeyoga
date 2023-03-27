@@ -24,7 +24,7 @@ export default function Home() {
 						</Image>
 						<div>
 							<h1 className="text-5xl font-bold mb-5 text-center">Meet Your Yoga Teacher</h1>
-							<p className="py-6 text-xl">Hi, I&apos;m Jaclyn. I have a passion for yoga and helping others get moving on their mat. Yoga has changed my life and I think it can change yours. Click below to learn more about my experience and certifications or to sign up for my newsletter.</p>
+							<p className="py-6 text-xl">Hi, I&apos;m Jaclyn. I have a passion for yoga and helping others get moving on their mat. Yoga has changed my life and I think it can change yours. Click below to learn more about my experience and certifications.</p>
 							<div className="flex content-center justify-center xs:justify-start">
 									<Link href="/about">
 										<button className="btn btn-primary">About Me</button>
