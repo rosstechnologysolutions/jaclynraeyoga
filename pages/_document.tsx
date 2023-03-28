@@ -8,7 +8,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="Jaclyn Rae Yoga Website" />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        <meta name="keywords" content="yoga, prenatal, pregnant, baby, babies, mom, mother, group, private, lessons, group, classes, wellness, mindful, teacher, shanti, health, education, specialist"/>
         <link rel="icon" href="/logo.webp" />
       </Head>
       <ConstructionWarning />

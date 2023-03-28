@@ -8,6 +8,7 @@ export default function About() {
   	<>
 	  <Head>
 		<title>Jaclyn Rae Yoga | About</title>
+		<meta name="title" content="Jaclyn Rae Yoga | About"/>
 	  </Head>
 		{/* TODO: clean this up. need another photo of her*/}
 		<div className="flex flex-col min-h-screen">

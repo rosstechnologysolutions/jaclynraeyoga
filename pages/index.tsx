@@ -11,6 +11,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Jaclyn Rae Yoga | Home</title>
+				<meta name="title" content="Jaclyn Rae Yoga | Home"/>
 			</Head>
 			{/* HERO */}
 			<section className="w-screen">
@@ -71,7 +72,7 @@ export default function Home() {
 								<h2 className="card-title">Prenatal Group Classes</h2>
 								<p>Connect with yourself, baby, and other pregnant mothers during this prenatal yoga class.</p>
 								<div className="card-actions justify-end">
-									<Link href="/classes"><button className="btn btn-primary">Learn More</button></Link>
+									<Link href="/classes"><button className="btn btn-primary">View Classes</button></Link>
 								</div>
 							</div>
 						</div>

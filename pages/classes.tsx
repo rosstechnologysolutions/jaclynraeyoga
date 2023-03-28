@@ -8,6 +8,7 @@ export default function Classes() {
   	<>
 	  <Head>
 		<title>Jaclyn Rae Yoga | Classes</title>
+		<meta name="title" content="Jaclyn Rae Yoga | Classes"/>
 	  </Head>
 		{/* TODO: clean this up. need another photo of her*/}
 		<div className="flex flex-col min-h-screen">
