@@ -33,11 +33,12 @@ export default function Home() {
 							</div>
 						</div> */}
 						<div>
-							<h1 className="text-4xl font-bold mb-10 text-center">Shanti Mom Prental Yoga Classes for All Trimesters</h1>
-							<p className="py-6 text-xl">Join a prenatal yoga class to connect with yourself, baby, and other soon-to-be moms.</p>
+							<h1 className="text-5xl font-bold mb-5 text-center">Prenatal Yoga Classes for Every Skill Level</h1>
+							<p className="py-6 text-xl">Join an approachable prenatal yoga class for all skill levels and connect with yourself, baby, and other soon to be moms.</p>
+							<p className="py-6 text-xl">Get your free Spotify Prental Yoga Playlist.</p>
 							<div className="flex content-center justify-center xs:justify-start">
 									<Link href="/classes">
-										<button className="btn btn-primary">View Classes</button>
+										<button className="btn btn-primary">About Me</button>
 									</Link>
 							</div>
 						</div>
