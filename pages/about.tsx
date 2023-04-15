@@ -30,7 +30,7 @@ export default function About() {
 						</p>
 						<br />
 						<p>
-							In March 2020, my daughter was born and the pandemic hit. I decided to leave elementary education and set out to follow my dreams of becoming a yoga teacher and balancing the stay-at-home-mom life. I have since completed my 200 & 300 HR YTT through Uplifted Yoga with Brett Larkin and an 85-hour prenatal yoga course with Shanti Mom Yoga while being pregnant with my second daughter. I loves to learn, teach, and connect with my students. I am in the thick of motherhood myself and have developed a passion for providing moms with a safe, supportive space to relax and connect with themselves, baby, and other mamas.
+							In March 2020, my daughter was born and the pandemic hit. I decided to leave elementary education and set out to follow my dreams of becoming a yoga teacher and balancing the stay-at-home-mom life. I have since completed my 200 & 300 HR YTT through Uplifted Yoga with Brett Larkin and an 85-hour prenatal yoga course with Shanti Mom Yoga while being pregnant with my second daughter. I love to learn, teach, and connect with my students. I am in the thick of motherhood myself and have developed a passion for providing moms with a safe, supportive space to relax and connect with themselves, baby, and other mamas.
 						</p>
 					</div>
 				</div>
