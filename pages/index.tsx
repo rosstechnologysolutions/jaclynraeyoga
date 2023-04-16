@@ -1,3 +1,4 @@
+import OptInBottomBanner from '@/components/OptinBottomBanner'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -33,12 +34,11 @@ export default function Home() {
 							</div>
 						</div> */}
 						<div>
-							<h1 className="text-5xl font-bold mb-5 text-center">Prenatal Yoga Classes for Every Skill Level</h1>
-							<p className="py-6 text-xl">Join an approachable prenatal yoga class for all skill levels and connect with yourself, baby, and other soon to be moms.</p>
-							<p className="py-6 text-xl">Get your free Spotify Prental Yoga Playlist.</p>
+							<h1 className="text-4xl font-bold mb-5 text-center">Prenatal Yoga Classes for Every Skill Level</h1>
+							<p className="py-6 text-xl text-center">Join an approachable prenatal yoga class for all skill levels. Connect with yourself, baby, and other soon to be moms.</p>
 							<div className="flex content-center justify-center xs:justify-start">
 									<Link href="/classes">
-										<button className="btn btn-primary">About Me</button>
+										<button className="btn btn-primary">Class Schedule</button>
 									</Link>
 							</div>
 						</div>
@@ -103,6 +103,7 @@ export default function Home() {
 				</div>
 			</section>
 
+			<OptInBottomBanner/ >
 			{/* TODO: get a yoga quote for jaclyn so we have ano;ther section */}
 
 			{/* Join the newsletter */}

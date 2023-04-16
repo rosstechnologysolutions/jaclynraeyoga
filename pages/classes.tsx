@@ -1,3 +1,4 @@
+import OptInBottomBanner from '@/components/OptinBottomBanner'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -61,6 +62,8 @@ export default function Classes() {
 					</div>
 				</section>
 			</div>
+		
+			<OptInBottomBanner />
 		</div>
 	</>
 	)
