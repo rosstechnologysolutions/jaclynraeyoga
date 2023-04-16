@@ -29,6 +29,7 @@ export default function NavBar() {
               <li className="text-xl font-bold"><Link href="/">Home</Link></li>
               <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
               <li className="text-xl font-bold"><Link href="/about">About Me</Link></li>
+              <li className="text-xl font-bold"><Link href="/blog/prenatal-vs-traditional-yoga">Blog</Link></li>
               {/* <li className="text-xl font-bold"><Link href="/subscribe.html">Subscribe</Link></li> */}
             </ul>
           </div>
@@ -43,6 +44,7 @@ export default function NavBar() {
                     <li className="text-xl font-bold"><Link href="/">Home</Link></li>
                     <li className="text-xl font-bold"><Link href="/classes">Classes</Link></li>
                     <li className="text-xl font-bold"><Link href="/about">About Me</Link></li>
+                    <li className="text-xl font-bold"><Link href="/blog/prenatal-vs-traditional-yoga">Blog</Link></li>
                     {/* <li className="text-xl font-bold"><Link href="/subscribe.html">Subscribe</Link></li> */}
                   </ul>
               </li>
