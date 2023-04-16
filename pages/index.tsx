@@ -34,8 +34,9 @@ export default function Home() {
 							</div>
 						</div> */}
 						<div>
-							<h1 className="text-4xl font-bold mb-5 text-center">Prenatal Yoga Classes for Every Skill Level</h1>
-							<p className="py-6 text-xl text-center">Join an approachable prenatal yoga class for all skill levels. Connect with yourself, baby, and other soon to be moms.</p>
+							<h1 className="text-4xl font-bold mb-5 text-center">Prenatal Yoga Classes for Every Trimester</h1>
+							<p className="pt-6 text-xl text-center">Join an approachable prenatal yoga class for all skill levels.</p>
+							<p className="pb-6 text-xl text-center">Connect with yourself, baby, and other soon to be moms.</p>
 							<div className="flex content-center justify-center xs:justify-start">
 									<Link href="/classes">
 										<button className="btn btn-primary">Class Schedule</button>
