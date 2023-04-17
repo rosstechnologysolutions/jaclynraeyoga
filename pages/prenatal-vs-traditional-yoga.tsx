@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 import ClassScheduleCallToAction from '@/components/ClassScheduleCallToAction'
-import HeaderImage from '../../public/prenatal-vs-traditional-yoga.jpeg'
+import HeaderImage from '../public/prenatal-vs-traditional-yoga.jpeg'
 
 export default function BlogArticle() {
   return (
